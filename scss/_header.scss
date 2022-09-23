@@ -75,6 +75,7 @@
         align-items: center;
         justify-content: center;
         height: 100vh;
+        gap: 35px;
         overflow: hidden;
         background-color: $color-one;
         list-style: none;
@@ -85,10 +86,38 @@
         &.open {
             transform: translateY(0);
         }
-    
-        &li {
+
+        &__item {
+            transform: translateX(100vw);
+            @include transition-ease;
+
+
+            &.open {
+                transform: translateX(0);
+            }
+
+            &.active > a {
+                color: $color-seven;
+            }
+        }
+
+        &__link {
             color: set-text-color($color-one);
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: 2rem;
+            @include transition-ease;
+
+            &:hover {
+                color: $color-five;
+                letter-spacing: 1px;
+            }
         }
     }
+}
 
+@for $i from 1 through 4 {
+    .menu-nav__item:nth-child(#{$i}) {
+        transition-delay: ($i * 0.1s) + 0.15s;
+    }
 }

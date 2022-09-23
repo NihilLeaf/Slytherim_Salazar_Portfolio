@@ -27,7 +27,7 @@ body {
     height: 100vh;
     font-family: 'Raleway', sans-serif;
     line-height: 1;
-    font-weight: 400;
+    font-weight: regular;
     display: flex;
 }
 
@@ -47,29 +47,35 @@ a {
     padding: 0.4rem; }
 
 main {
+    color: set-text-color($color-one);
     width: 100vw;
     height: 100%;
 
     .social-icons {
         position: fixed;
-        bottom: 1rem;
+        bottom: 1.2rem;
         left: 1rem;
+        @include transition-ease();
 
-
-            &:hover {
-                color: $color-five;
-            }
-
+        &:hover {
+            color: $color-five;
+            letter-spacing: 1px;
         }
-
+    }
     }
 
 footer {
     color: set-text-color($color-one);
     position: fixed;
     font-size: 1rem;
-    bottom: 0.3rem;
+    bottom: 0.4rem;
     right: 1rem;
     text-align: right;
     padding: 1rem;
+    cursor: pointer;
+    @include transition-ease();
+
+    &:hover {
+        color: $color-five;
+    }
 }
