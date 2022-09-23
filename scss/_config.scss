@@ -1,0 +1,75 @@
+$color-one: #040c06;
+$color-two: #112318;
+$color-three: #1e3a29;
+$color-four: #305d42;
+$color-five: #4d8061;
+$color-six: #112318;
+$color-seven: #89a257;
+$color-eight: #bedc7f;
+$color-nine: #eeffcc;
+
+@mixin transition-ease {
+    transition: all 300ms ease;
+}
+
+@function set-text-color($color) {
+    @if (lightness($color) > 40%) {
+        @return #000;
+    }
+    @else {
+        @return $color-nine;
+    }
+}
+
+body {
+    background-color: $color-one;
+    color: set-text-color($color-one);
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    display: flex;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    color: set-text-color($color-one);
+}
+
+a {
+    color: set-text-color($color-one);
+    @include transition-ease();
+    padding: 0.4rem; }
+
+main {
+    width: 100vw;
+    height: 100%;
+
+    .social-icons {
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem;
+
+
+            &:hover {
+                color: $color-five;
+            }
+
+        }
+
+    }
+
+footer {
+    color: set-text-color($color-one);
+    position: fixed;
+    font-size: 1rem;
+    bottom: 0.3rem;
+    right: 1rem;
+    text-align: right;
+    padding: 1rem;
+}
