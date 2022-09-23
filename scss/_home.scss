@@ -1,6 +1,6 @@
 .home {
     height: 100%;
-    padding-top: 40vh;
+    padding-top: 30vh;
     overflow: hidden;
     align-items: center;
     text-align: center;
@@ -11,13 +11,12 @@
     background-size: cover;
 
     .hello {
-        margin-right: 29%;
         font-size: 1.3rem;
         margin-bottom: 1rem;
     }
 
     &__name {
-        font-size: 5rem;
+        font-size: 4.6rem;
         padding-bottom: 1rem;
         margin-bottom: 1rem;
         cursor: pointer;
@@ -30,6 +29,31 @@
             &:hover {
                 color: $color-five;
             }
+        }
+    }
+
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        width: 26vw;
+        height: 6vh;
+        background-color: $color-nine;
+        border-radius: 20px;
+        margin-top: 1rem;
+        @include transition-ease;
+
+        & > a {
+            text-transform: uppercase;
+            font-weight: 800;
+            color: $color-one;
+        }
+
+        &:hover {
+            letter-spacing: 1px;
+            box-shadow: 0 0 2px 1px green;
         }
     }
 

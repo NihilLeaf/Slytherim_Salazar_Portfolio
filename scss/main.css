@@ -96,7 +96,7 @@ main .social-icons:hover {
 footer {
   color: #eeffcc;
   position: fixed;
-  font-size: 1rem;
+  font-size: 0.7rem;
   bottom: 0.4rem;
   right: 1rem;
   text-align: right;
@@ -110,7 +110,7 @@ footer:hover {
 
 .home {
   height: 100%;
-  padding-top: 40vh;
+  padding-top: 30vh;
   overflow: hidden;
   align-items: center;
   text-align: center;
@@ -118,12 +118,11 @@ footer:hover {
   background-size: cover;
 }
 .home .hello {
-  margin-right: 29%;
   font-size: 1.3rem;
   margin-bottom: 1rem;
 }
 .home__name {
-  font-size: 5rem;
+  font-size: 4.6rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   cursor: pointer;
@@ -135,6 +134,28 @@ footer:hover {
 }
 .home__name--last:hover {
   color: #4d8061;
+}
+.home .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  width: 26vw;
+  height: 6vh;
+  background-color: #eeffcc;
+  border-radius: 20px;
+  margin-top: 1rem;
+  transition: all 300ms ease;
+}
+.home .button > a {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #040c06;
+}
+.home .button:hover {
+  letter-spacing: 1px;
+  box-shadow: 0 0 2px 1px green;
 }
 .home .profission {
   color: #bedc7f;
@@ -263,4 +284,36 @@ footer:hover {
 
 .menu-nav__item:nth-child(4) {
   transition-delay: 0.55s;
+}
+
+.about {
+  overflow: hidden;
+  padding-bottom: 2rem;
+}
+.about .about__img-bio {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, #040c06, rgba(4, 12, 6, 0.5)), url("/img/img2.jpg") center center;
+  background-size: cover;
+  align-items: center;
+  justify-content: flex-end;
+}
+.about__bio {
+  width: 80%;
+  text-align: center;
+}
+.about__bio p {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.about .about-me {
+  font-size: 2.5rem;
+  color: #89a257;
+  margin-bottom: 2rem;
+}
+.about p {
+  margin-bottom: 2rem;
+  text-align: justify;
 }/*# sourceMappingURL=main.css.map */
