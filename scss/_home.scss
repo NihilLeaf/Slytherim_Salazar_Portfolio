@@ -6,7 +6,7 @@
     text-align: center;
     background:
     linear-gradient(
-        to right, rgba($color-one, 1),
+        to top, rgba($color-one, 1),
         rgba($color-one, 0.5)), url('/img/bg2.jpg') center top;
     background-size: cover;
 
@@ -20,11 +20,13 @@
         padding-bottom: 1rem;
         margin-bottom: 1rem;
         cursor: pointer;
+        font-family: 'Shadows Into Light', cursive;
 
         &--last {
             color: $color-seven;
             font-weight: 700;
             @include transition-ease;
+            font-family: 'Shadows Into Light', cursive;
 
             &:hover {
                 color: $color-five;
@@ -34,21 +36,23 @@
 
     .button {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin: auto;
-        width: 26vw;
-        height: 6vh;
+        margin: 0 auto;
+        width: 30vw;
+        height: 8vh;
         background-color: $color-nine;
         border-radius: 20px;
         margin-top: 1rem;
         @include transition-ease;
 
-        & > a {
+        .btn {
+            display: flex;
             text-transform: uppercase;
             font-weight: 800;
             color: $color-one;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
         }
 
         &:hover {
