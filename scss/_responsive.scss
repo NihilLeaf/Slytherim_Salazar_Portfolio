@@ -1,0 +1,32 @@
+@include media-lg {
+    .menu-btn {
+        visibility: hidden;
+    }
+    .nav {
+        visibility: visible;
+
+        .menu-nav {
+            padding: 30px 0;
+            height: 100%;
+            display: block;
+            background: transparent;
+            text-align: center;
+            transform: translateY(0);
+            background: linear-gradient(
+                to bottom, rgba($color-one, 0.9),
+                rgba($color-one, 0.6));
+    
+            &__item {
+                display: inline;
+                margin: 10px 10px;
+                font-size: 1.5rem;
+            }
+
+            &__link {
+                margin: 30px 0;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+}

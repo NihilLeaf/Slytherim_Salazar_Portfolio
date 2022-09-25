@@ -39,7 +39,9 @@
         margin: 0 auto;
         width: 30vw;
         height: 8vh;
-        background-color: $color-nine;
+        background: linear-gradient(
+            to top, rgba($color-nine, 0.8),
+            rgba($color-nine, 0.6));
         border-radius: 20px;
         margin-top: 1rem;
         @include transition-ease;

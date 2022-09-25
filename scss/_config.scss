@@ -21,6 +21,13 @@ $color-nine: #eeffcc;
     }
 }
 
+@mixin media-lg {
+    @media screen and (min-width: 900px) {
+        @content;
+    }
+}
+
+
 body {
     background-color: $color-one;
     color: set-text-color($color-one);
