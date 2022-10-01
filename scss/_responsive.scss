@@ -28,5 +28,18 @@
             }
         }
     }
+}
 
+
+@include media-s {
+    .about {
+        .button {
+            width: 80vw;
+            height: 15vh;
+
+            & a {
+                width: 80vw;
+            }
+        }
+    }
 }

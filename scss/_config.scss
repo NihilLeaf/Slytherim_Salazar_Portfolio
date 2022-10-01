@@ -27,6 +27,12 @@ $color-nine: #eeffcc;
     }
 }
 
+@mixin media-s {
+    @media screen and (max-width: 800px) {
+        @content;
+    }
+}
+
 
 body {
     background-color: $color-one;
