@@ -486,7 +486,7 @@ footer:hover {
   text-align: center;
   width: 80vw;
   height: 60vh;
-  padding-top: 10vh;
+  padding-top: 5vh;
   background: linear-gradient(to bottom, rgba(190, 220, 127, 0.4), rgba(190, 220, 127, 0.2));
   color: #eeffcc;
   border-radius: 50px;
@@ -510,8 +510,8 @@ footer:hover {
     visibility: visible;
   }
   .nav .menu-nav {
-    padding: 30px 0;
-    height: 100%;
+    padding: 18px 0;
+    height: 10vh;
     display: block;
     background: transparent;
     text-align: center;
@@ -520,20 +520,23 @@ footer:hover {
   }
   .nav .menu-nav__item {
     display: inline;
-    margin: 10px 10px;
+    margin: 0px 10px;
     font-size: 1.5rem;
   }
   .nav .menu-nav__link {
-    margin: 30px 0;
+    margin: 10px 0;
     font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 800px) {
   .about .button {
     width: 80vw;
-    height: 15vh;
+    height: 12vh;
   }
   .about .button a {
     width: 80vw;
+  }
+  .home .button {
+    width: 60vw;
   }
 }/*# sourceMappingURL=main.css.map */
